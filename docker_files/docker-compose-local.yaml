@@ -29,3 +29,8 @@ services:
         MYSQL_PASSWORD: mypassword
       volumes:
        - ../data/mariadb:/var/lib/mysql
+
+    my_redis_service:
+      image: redis
+      volumes:
+        - ../data/redis/data/:/data
