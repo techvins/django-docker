@@ -10,7 +10,7 @@ services:
       working_dir: /app
       command: python3 manage.py runserver 0.0.0.0:8000
       volumes:
-        - ../my_project:/app
+        - ../my_project/my_project:/app
       environment:
         - "PYTHONUNBUFFERED=1"
       expose:

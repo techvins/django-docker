@@ -6,11 +6,13 @@ This is template repository to build your ****django docker**** setup quickly an
 - Local Docker Setup
 - Docker Swarm Production Setup(Coming Soon)
 
-###Steps
+### Steps
 
 Use the template or download the repository
-- Go to root directory
+- Go to root/docker_files directory
 - Update requirements.txt inside docker_files dir
+- Create env docker image using command: *docker build -t my_django_env . -f DockerfileEnv*
+- Go back to root directory
 - run command *docker-compose -f docker_files/docker-compose-local.yaml run my_django_service django-admin.py startproject my_project*
     - This will create the default files and diretories for django project named **my_project**
 - run command *docker-compose -f docker_files/docker-compose-local.yaml up*
