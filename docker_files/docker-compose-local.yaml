@@ -15,3 +15,17 @@ services:
         - "PYTHONUNBUFFERED=1"
       expose:
         - "8000"
+      depends_on:
+        - my_mariadb_service
+      
+
+    my_mariadb_service:
+      image: mariadb:10.2
+      environment:
+        MYSQL_ROOT_PASSWORD: root
+        MYSQL_DATABASE: mydb
+        MYSQL_USER: myusername
+        MYSQL_HOST: localhost
+        MYSQL_PASSWORD: mypassword
+      volumes:
+       - ../data/mariadb:/var/lib/mysql

@@ -17,7 +17,7 @@ Use the template or download the repository
     - This will create the default files and diretories for django project named **my_project**
 - run command *docker-compose -f docker_files/docker-compose-local.yaml up*
     - This will up the services mentioned in docker compose local file
-
+- wait for the services to come up
 - got to localhost:8000 to check the default django page
 - it's done    
 
