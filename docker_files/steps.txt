@@ -1,0 +1,2 @@
+docker build -t my_django_env . -f DockerfileEnv
+docker build -t my_django_build . -f Dockerfile
